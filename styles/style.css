@@ -1,1 +1,255 @@
 /* место для вашего кода */
+
+
+.header {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header_meny {
+  justify-content: flex-start;
+}
+
+.header_menu_list {
+  padding-left: 50px;
+  padding-top: 133px;
+  padding-bottom: 138px;
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header_logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header_address {
+  font-style: normal;
+  /* почему стиль сменился только тут???*/
+  padding-right: 50px;
+  padding-top: 95px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+  /*увеличение границы для правильного положения, 
+    как я опнимаю border-box  в глобальных стилях задает правило 
+    на размер элемената элемент = заданный отступ,
+    таким образом тут использую размер элемента 240 = отступ 50*/
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cover {
+  margin: 0;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 757px;
+  color: #ffffff;
+  position: relative;
+}
+
+.cover_main_mane {
+  padding: 165px 50px 106px 50px;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cover_main_mane_left {
+  display: block;
+  letter-spacing: 30%;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.cover_main_mane_center {
+  display: block;
+  letter-spacing: 30%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.cover_main_mane_right {
+  display: block;
+  letter-spacing: 30%;
+  text-align: right;
+}
+
+.cover_description {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.cover_description_name {
+  padding-left: 50px;
+  word-spacing: 20px;
+  padding: 12px 32px;
+}
+
+.cover_description_buttom {
+  all: unset;
+  padding: 12px 32px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border: solid;
+  border-width: 1px;
+}
+
+.lots {
+  margin: 180px 24px 120px 24px;
+}
+
+.lots_title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.lots_films,
+.lots_books,
+.lots_paints {
+    background-position: center;
+  background-size: cover;
+  width: 334px;
+  height: 596px;
+  color: #ffffff;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+  position: relative;
+}
+
+.lots_films_name,
+.lots_books_name,
+.lots_paints_name {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration:underline;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.lots_films_article,
+.lots_books_article,
+.lots_paints_article {
+  font-size: 20px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.lots_films {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots_books {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots_paints {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.for_flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lots_more {
+  font-size: 20px;
+  text-decoration:underline; 
+  margin-left: 40px;
+}
+
+.about {
+  padding-left: 24px;
+  padding-right: 24px;
+  display: grid;
+  grid-template-columns: 324px 1fr;
+}
+
+.about_logo{
+  margin-left: 47px;
+  margin-top: 35px;
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.about_logo_img{
+  width: 142px;
+  height: 113px;
+  margin: 64px 46px;
+}
+
+.about_information_title {
+  margin-top: 136px;
+  margin-right: 402px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about_information_text {
+  width: 793px;
+  height: 312px;
+  margin-right: 0px;
+  margin-bottom: 180px;
+  font-size: 20px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  margin: 180px 24px 120px 0px;
+
+
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgb(0 0 0/0.6);
+  width: 100%;
+  height: 100%;
+}
+
