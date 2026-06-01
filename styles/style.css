@@ -1,6 +1,5 @@
 /* место для вашего кода */
 
-
 .header {
   margin: 0;
   font-weight: normal;
@@ -31,7 +30,6 @@
 
 .header_address {
   font-style: normal;
-  /* почему стиль сменился только тут???*/
   padding-right: 50px;
   padding-top: 95px;
   padding-bottom: 100px;
@@ -130,7 +128,7 @@
 .lots_films,
 .lots_books,
 .lots_paints {
-    background-position: center;
+  background-position: center;
   background-size: cover;
   width: 334px;
   height: 596px;
@@ -147,7 +145,7 @@
   font-size: 22px;
   text-transform: uppercase;
   font-weight: bold;
-  text-decoration:underline;
+  text-decoration: underline;
   padding-top: 48px;
   padding-left: 40px;
   padding-right: 40px;
@@ -174,7 +172,7 @@
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.for_flex{
+.for_flex {
   width: 100%;
   height: 100%;
   display: flex;
@@ -184,7 +182,7 @@
 
 .lots_more {
   font-size: 20px;
-  text-decoration:underline; 
+  text-decoration: underline;
   margin-left: 40px;
 }
 
@@ -195,7 +193,7 @@
   grid-template-columns: 324px 1fr;
 }
 
-.about_logo{
+.about_logo {
   margin-left: 47px;
   margin-top: 35px;
   background-color: black;
@@ -204,46 +202,65 @@
   border-radius: 50%;
 }
 
-.about_logo_img{
+.about_logo_img {
   width: 142px;
   height: 113px;
   margin: 64px 46px;
 }
 
+.about_information {
+  margin-left: 72px;
+  margin-top: 133px;
+  margin-bottom: 180px;
+}
+
 .about_information_title {
-  margin-top: 136px;
-  margin-right: 402px;
-  margin-bottom: 100px;
   font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 100px;
 }
 
 .about_information_text {
-  width: 793px;
-  height: 312px;
-  margin-right: 0px;
-  margin-bottom: 180px;
   font-size: 20px;
   font-weight: normal;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 24px;
 }
 
-
-
-
-
-
-
-
-
-
 .footer {
-  margin: 180px 24px 120px 0px;
+  margin: 0px 24px 120px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+.footer_address {
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  padding-left: 50px;
+}
 
+.footer_menu_list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer_link {
+  display: flex;
+  gap: 48px;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.footer_logo_yt,
+.footer_logo_vk,
+.footer_logo_pin {
+  width: 48px;
+  height: 48px;
 }
 
 .overlay {
@@ -252,4 +269,3 @@
   width: 100%;
   height: 100%;
 }
-
