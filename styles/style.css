@@ -33,9 +33,7 @@
   flex-direction: column;
   max-width: 240px;
   justify-self: end;
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .cover {
