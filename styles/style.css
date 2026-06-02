@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  padding: 92px 50px 96px;
 }
 
 .header_meny {
@@ -14,9 +15,6 @@
 }
 
 .header_menu_list {
-  padding-left: 50px;
-  padding-top: 133px;
-  padding-bottom: 138px;
   display: flex;
   gap: 32px;
   list-style: circle;
@@ -30,16 +28,10 @@
 
 .header_address {
   font-style: normal;
-  padding-right: 50px;
-  padding-top: 95px;
-  padding-bottom: 100px;
+  line-height: 24.3px;
   display: flex;
   flex-direction: column;
-  max-width: 290px;
-  /*увеличение границы для правильного положения, 
-    как я опнимаю border-box  в глобальных стилях задает правило 
-    на размер элемената элемент = заданный отступ,
-    таким образом тут использую размер элемента 240 = отступ 50*/
+  max-width: 240px;
   justify-self: end;
   display: flex;
   flex-direction: column;
@@ -48,60 +40,67 @@
 
 .cover {
   margin: 0;
+  padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
   min-height: 757px;
   color: #ffffff;
   position: relative;
+  display: grid;
+  gap: 106px;
 }
 
 .cover_main_mane {
-  padding: 165px 50px 106px 50px;
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 20px;
+}
+
+.cover_main_mane_left,
+.cover_main_mane_center,
+.cover_main_mane_right {
+  line-height: 115%;
+  letter-spacing: 30%;
+  display: block;
 }
 
 .cover_main_mane_left {
-  display: block;
-  letter-spacing: 30%;
   text-align: left;
-  padding-bottom: 20px;
 }
 
 .cover_main_mane_center {
-  display: block;
-  letter-spacing: 30%;
   text-align: center;
-  padding-bottom: 20px;
+  margin-left: 30px;
 }
 
 .cover_main_mane_right {
-  display: block;
-  letter-spacing: 30%;
   text-align: right;
+  margin-right: -30px;
 }
 
 .cover_description {
-  display: flex;
   justify-content: space-between;
   font-size: 22px;
   font-weight: normal;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
 }
 
 .cover_description_name {
-  padding-left: 50px;
-  word-spacing: 20px;
-  padding: 12px 32px;
+  word-spacing: 18px;
 }
 
 .cover_description_buttom {
   all: unset;
   padding: 12px 32px;
-  margin-right: 50px;
-  margin-bottom: 50px;
   border: solid;
   border-width: 1px;
 }
@@ -112,10 +111,11 @@
 
 .lots_title {
   font-size: 40px;
+  line-height: 100%;
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 40px;
-  margin-bottom: 27px;
+  margin-bottom: 35px;
 }
 
 .lots_list {
@@ -128,14 +128,12 @@
 .lots_films,
 .lots_books,
 .lots_paints {
+  padding: 48px 40px;
   background-position: center;
   background-size: cover;
   width: 334px;
   height: 596px;
   color: #ffffff;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: space-between;*/
   position: relative;
 }
 
@@ -143,21 +141,21 @@
 .lots_books_name,
 .lots_paints_name {
   font-size: 22px;
+  line-height: 120%;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: underline;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-right: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .lots_films_article,
 .lots_books_article,
 .lots_paints_article {
   font-size: 20px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  line-height: 120%;
+  position: relative;
+  z-index: 2;
 }
 
 .lots_films {
@@ -182,15 +180,16 @@
 
 .lots_more {
   font-size: 20px;
+  line-height: 100%;
   text-decoration: underline;
   margin-left: 40px;
 }
 
 .about {
-  padding-left: 24px;
-  padding-right: 24px;
+  margin: 0px 24px 180px 24px;
   display: grid;
-  grid-template-columns: 324px 1fr;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
 }
 
 .about_logo {
@@ -203,19 +202,18 @@
 }
 
 .about_logo_img {
-  width: 142px;
-  height: 113px;
-  margin: 64px 46px;
+  width: 148px;
+  height: 114px;
+  margin: 64px 45.52px 62px 46.48px;
 }
 
 .about_information {
-  margin-left: 72px;
-  margin-top: 133px;
-  margin-bottom: 180px;
+  margin-top: 140px;
 }
 
 .about_information_title {
   font-size: 40px;
+  line-height: 100%;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 100px;
@@ -223,29 +221,32 @@
 
 .about_information_text {
   font-size: 20px;
+  line-height: 24px;
   font-weight: normal;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 24px;
 }
 
 .footer {
-  margin: 0px 24px 120px 0px;
+  margin: 0px 0px 120px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 50px 0px 50px;
 }
 
 .footer_address {
   font-style: normal;
   font-size: 18px;
+  line-height: 24.3px;
   display: flex;
   flex-direction: column;
   width: 264px;
-  padding-left: 50px;
 }
 
 .footer_menu_list {
   list-style: none;
+  font-size: 18px;
+  line-height: 100%;
   text-align: center;
 }
 
@@ -253,7 +254,6 @@
   display: flex;
   gap: 48px;
   justify-content: flex-end;
-  padding-right: 50px;
 }
 
 .footer_logo_yt,
@@ -268,4 +268,7 @@
   background-color: rgb(0 0 0/0.6);
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
