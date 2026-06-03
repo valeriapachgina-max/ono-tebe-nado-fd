@@ -20,17 +20,25 @@
   list-style: circle;
 }
 
+.header_menu_list_main {
+  list-style: none;
+}
+
 .header_logo {
   display: block;
   width: 148px;
   height: 105px;
 }
 
-.header_address {
+.address {
   font-style: normal;
+  font-size: 18px;
   line-height: 24.3px;
   display: flex;
   flex-direction: column;
+}
+
+.header_address {
   max-width: 240px;
   justify-self: end;
 }
@@ -58,9 +66,7 @@
   gap: 20px;
 }
 
-.cover_main_mane_left,
-.cover_main_mane_center,
-.cover_main_mane_right {
+.cover_main_mane_word {
   line-height: 115%;
   letter-spacing: 30%;
   display: block;
@@ -118,25 +124,26 @@
 .lots_list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.lots_films,
-.lots_books,
-.lots_paints {
+.lots_list_point {
   padding: 48px 40px;
   background-position: center;
   background-size: cover;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
+  /* комментарий к замечанию относительно удаления свойства высоты - 
+  при удалении высота карточки не соответвует макету. 
+  Для сохранения соостветствия макету и возможности увеличения 
+  при добавлении контента сменила значение с высоты на минимальную высоту*/
   color: #ffffff;
   position: relative;
 }
 
-.lots_films_name,
-.lots_books_name,
-.lots_paints_name {
+.lots_point_name {
   font-size: 22px;
   line-height: 120%;
   text-transform: uppercase;
@@ -146,9 +153,7 @@
   z-index: 2;
 }
 
-.lots_films_article,
-.lots_books_article,
-.lots_paints_article {
+.lots_point_info {
   font-size: 20px;
   line-height: 120%;
   position: relative;
@@ -232,12 +237,7 @@
 }
 
 .footer_address {
-  font-style: normal;
-  font-size: 18px;
-  line-height: 24.3px;
-  display: flex;
-  flex-direction: column;
-  width: 264px;
+  min-width: 264px;
 }
 
 .footer_menu_list {
@@ -253,9 +253,7 @@
   justify-content: flex-end;
 }
 
-.footer_logo_yt,
-.footer_logo_vk,
-.footer_logo_pin {
+.footer_logo {
   width: 48px;
   height: 48px;
 }
